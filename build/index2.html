@@ -7,11 +7,30 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?2020925235638400" rel="stylesheet">
+    <link href="css/main.css?2020925235638330" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
     <main class="main">
+      <section class="screen screen--main">
+        <div class="screen__header">
+          <div class="screen__header-you"><img src="images/you.png" width="430" height="263" alt=""></div>
+          <div class="screen__header-vs"><img src="images/vs.svg" width="677" height="560" alt=""></div>
+          <div class="screen__header-gripp"><img src="images/gripp-text.svg" width="656" height="390" alt=""></div>
+        </div>
+        <button class="screen__start" type="button"><span class="visually-hidden">Начать битву</span></button>
+        <div class="screen__virus screen__virus--one blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--two blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--three blur-41 zi-1"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--four blur-7"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--five blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__woman"><img src="images/woman.png" srcset="images/woman@2x.png" width="468" height="721" alt="">
+          <div class="screen__woman-speech">Я бесстрашен, поверь, меня тут все знают и я всегда всех сильней!</div>
+        </div>
+        <div class="screen__gripp"><img src="images/gripp.svg" width="578" height="565" alt="">
+          <div class="screen__gripp-speech">Я бесстрашен, поверь, меня тут все знают и я всегда всех сильней!</div>
+        </div>
+      </section>
       <section class="screen">
         <div class="screen__header">
           <div class="screen__header-you"><img src="images/you.png" width="430" height="263" alt=""></div>
@@ -20,14 +39,14 @@
         </div>
         <div class="screen__text">Каждый год появляется все больше и больше информации о гриппе, которая сбивает нас с толку. Что такое грипп? Правильно ли называть так любое ОРВИ? Нужно ли делать прививки от гриппа? Можно ли заболеть именно из-за них?</div>
         <div class="screen__board">
-          <div class="question">
+          <div class="question" style="display: none">
             <div class="question__text">Про любое ОРВИ можно сказать «Да я уже переболел гриппом!»</div>
             <div class="question__buttons">
               <button class="question__btn question__btn--true" type="button">Правда</button>
               <button class="question__btn question__btn--myth" type="button">Миф</button>
             </div>
           </div>
-          <div class="doctor" style="display: none;">
+          <div class="doctor">
             <div class="doctor__title">Миф</div>
             <div class="doctor__wrapper">
               <div class="doctor__author">
@@ -39,22 +58,50 @@
               </div>
             </div>
           </div>
-          <div class="result" style="display: none;">
-            <div class="screen__board-score">3 x 7</div>
+        </div>
+        <div class="screen__virus screen__virus--six blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--seven blur-7 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--five blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+      </section>
+      <section class="screen">
+        <div class="screen__header">
+          <div class="screen__header-you"><img src="images/you.png" width="430" height="263" alt=""></div>
+          <div class="screen__header-vs"><img src="images/vs.svg" width="677" height="560" alt=""></div>
+          <div class="screen__header-gripp"><img src="images/gripp-text.svg" width="656" height="390" alt=""></div>
+        </div>
+        <div class="screen__text">Каждый год появляется все больше и больше информации о гриппе, которая сбивает нас с толку. Что такое грипп? Правильно ли называть так любое ОРВИ? Нужно ли делать прививки от гриппа? Можно ли заболеть именно из-за них?</div>
+        <div class="screen__board">
+          <div class="screen__board-score">3 x 7</div>
+          <div class="result">
             <div class="result__title">Увы, пока грипп побеждает…</div>
             <div class="result__text">Кажется, ты еще не все знаешь об опасностях гриппа и пользе вакцинации от него… Надеемся, что наши вопросы и пояснения помогли тебе вооружиться главным – информацией о враге! Помни, ты всегда можешь узнать больше о гриппе и прививках, обратившись к своему участковому терапевту или зайдя в соответствующие разделы на портале <a href="#">mos.ru</a>.</div><a class="result__btn" href="#">Пройти тест еще раз</a>
           </div>
-          <div class="result" style="display: none;">
-            <div class="screen__board-score">3 x 7</div>
+        </div>
+        <div class="winner winner--gripp"><img src="images/gripp.svg" width="578" height="565" alt=""></div>
+        <div class="screen__virus screen__virus--six blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--eight blur-7 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--nine blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+      </section>
+      <section class="screen">
+        <div class="screen__header">
+          <div class="screen__header-you"><img src="images/you.png" width="430" height="263" alt=""></div>
+          <div class="screen__header-vs"><img src="images/vs.svg" width="677" height="560" alt=""></div>
+          <div class="screen__header-gripp"><img src="images/gripp-text.svg" width="656" height="390" alt=""></div>
+        </div>
+        <div class="screen__text">Каждый год появляется все больше и больше информации о гриппе, которая сбивает нас с толку. Что такое грипп? Правильно ли называть так любое ОРВИ? Нужно ли делать прививки от гриппа? Можно ли заболеть именно из-за них?</div>
+        <div class="screen__board">
+          <div class="screen__board-score">9 x 0</div>
+          <div class="result">
             <div class="result__title">Ура, победа над гриппом возможна!</div>
             <div class="result__text">Кажется, ты еще не все знаешь об опасностях гриппа и пользе вакцинации от него… Надеемся, что наши вопросы и пояснения помогли тебе вооружиться главным – информацией о враге! Помни, ты всегда можешь узнать больше о гриппе и прививках, обратившись к своему участковому терапевту или зайдя в соответствующие разделы на портале <a href="#">mos.ru</a>.</div><a class="result__btn" href="#">Пройти тест еще раз</a>
           </div>
         </div>
-        <div class="winner winner--gripp" style="display: none;"><img src="images/gripp.svg" width="578" height="565" alt=""></div>
-        <div class="winner winner--woman" style="display: none;"><img src="images/woman-2.png" srcset="images/woman-2@2x.png 2x" width="724" height="539" alt=""></div>
+        <div class="winner winner--woman"><img src="images/woman-2.png" srcset="images/woman-2@2x.png 2x" width="724" height="539" alt=""></div>
         <div class="screen__virus screen__virus--six blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
-        <div class="screen__virus screen__virus--seven blur-7 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
-        <div class="screen__virus screen__virus--five blur-30 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--ten blur-16 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--eleven blur-16 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--twelve blur-30 zi-1"><img src="images/virus.svg" width="71" height="69" alt=""></div>
+        <div class="screen__virus screen__virus--thirteen blur-7 zi-3"><img src="images/virus.svg" width="71" height="69" alt=""></div>
       </section>
     </main>
     <footer class="footer">
@@ -80,6 +127,6 @@
         </ul>
       </div>
     </footer>
-    <script src="js/main.js?2020925235638400"></script>
+    <script src="js/main.js?2020925235638330"></script>
   </body>
 </html>

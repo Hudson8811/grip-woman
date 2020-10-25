@@ -4,6 +4,10 @@
   bottom: 0;
   padding-left: vw(83);
   padding-bottom: vw(36);
+  @include for-lg{
+    padding-left: vww(83);
+    padding-bottom: vw(36);
+  }
 
   &__share {
     &-text {
@@ -12,6 +16,11 @@
       line-height: 1.235;
       font-weight: 500;
       color: $white;
+      text-transform: uppercase;
+      @include for-lg{
+        margin-bottom: vww(10);
+        font-size: vww(17);
+      }
     }
   }
 }

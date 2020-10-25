@@ -3,11 +3,16 @@
 
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   background-color: $color-dark-blue;
   background-image: url("../images/bg.jpg");
   background-size: cover;
+
+  @include for-mb{
+    min-height: vw2(1020);
+    height: 100vh;
+  }
 
   @include retina {
     background-image: url("../images/bg@2x.jpg");
@@ -17,15 +22,32 @@
     #{$self}__header {
       width: vw(1390);
       padding-top: vw(93);
+      @include for-mb{
+        width: vw2(768);
+      }
+
+      @include for-lg{
+        width: vww(1390);
+        padding-top: vww(93);
+      }
 
       &::after {
         top: vw(72);
         left: vw(63);
+
+        @include for-lg{
+          top: vww(72);
+          left: vww(63);
+        }
       }
 
       &-you {
         width: vw(430);
         margin-left: vw(83);
+        @include for-lg{
+          width: vww(430);
+          margin-left: vww(83);
+        }
       }
 
       &-vs {
@@ -33,12 +55,22 @@
         top: vw(50);
         left: vw(340);
         width: vw(677);
+        @include for-lg{
+          top: vww(50);
+          left: vww(340);
+          width: vww(677);
+        }
       }
 
       &-gripp {
         width: vw(656);
         margin-right: vw(-125);
         margin-top: vw(-70);
+        @include for-lg{
+          width: vww(656);
+          margin-right: vww(-125);
+          margin-top: vww(-70);
+        }
       }
     }
   }
@@ -51,6 +83,23 @@
     width: vw(1140);
     margin: 0 auto;
     padding-top: vw(57);
+    @include for-lg{
+      padding-top: vww(57);
+      width: vww(1140);
+    }
+
+    @include for-mb{
+      width: vw2(768);
+      padding-top: vw2(57);
+      height: vw2(534);
+      background: url(../images/group-4.svg) no-repeat center center;
+      background-size: 100% 100%;
+      
+      & > div{
+        display: none;
+      }
+
+    }
 
     &::after {
       content: "";
@@ -65,6 +114,16 @@
       opacity: 0.6;
       mix-blend-mode: lighten;
       filter: blur(163px);
+      @include for-lg{
+        left: vww(56);
+        z-index: -1;
+        width: vww(448);
+        height: vww(300);
+      }
+      @include for-mb{
+        width: vw2(768);
+        padding-top: vw2(57);
+      }
     }
 
     img {
@@ -76,6 +135,10 @@
     &-you {
       width: vw(385);
       margin-left: vw(-13);
+      @include for-lg{
+        width: vww(385);
+        margin-left: vww(-13);
+      }
     }
 
     &-vs {
@@ -83,12 +146,22 @@
       top: vw(17);
       left: vw(238);
       width: vw(351);
+      @include for-lg{
+        top: vww(17);
+        left: vww(238);
+        width: vww(351);
+      }
     }
 
     &-gripp {
       width: vw(656);
       margin-right: vw(-28);
       margin-top: vw(-75);
+      @include for-lg{
+        width: vww(656);
+        margin-right: vww(-28);
+        margin-top: vww(-75);
+      }
     }
   }
 
@@ -103,6 +176,12 @@
     height: vw(88);
     cursor: pointer;
 
+    @include for-lg{
+      bottom: vww(54);
+      width: vww(532);
+      height: vww(88);
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -113,8 +192,13 @@
       height: vw(490);
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url("../images/start-btn.svg");
+      background-image: url("../images/start-btn.png");
       pointer-events: none;
+      @include for-lg{
+        bottom: vww(-55);
+        width: vww(1045);
+        height: vww(490);
+      }
     }
   }
 
@@ -126,31 +210,44 @@
     line-height: 1.238;
     color: $white;
     text-align: center;
+    @include for-lg{
+      width: vww(851);
+      margin: vww(-66) auto vww(48);
+
+      font-size: vww(21);
+    }
   }
 
   &__board {
     position: relative;
     z-index: 0;
     width: vw(928);
-    height: vw(483);
     margin: vw(40) auto 0;
     border: solid 1px transparent;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    @include for-lg{
+      width: vww(928);
+      margin: vww(40) auto 0;
+    }
 
     &::before {
       content: "";
       position: absolute;
-      left: 50%;
-      bottom: vw(-115);
+      left: 52%;
+      bottom: -60%;
       z-index: -1;
       transform: translateX(-50%);
       width: vw(1722);
-      height: vw(869);
+      height: 230%;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 100%;
 
       background-image: url("../images/3.svg");
+      opacity: 0.7;
+      @include for-lg{
+        width: vww(1722);
+      }
     }
 
     &-score {
@@ -164,6 +261,13 @@
       font-weight: 700;
       color: #9eeeff;
       text-align: center;
+      @include for-lg{
+        top: vww(78);
+        left: vww(-123);
+        z-index: 3;
+        width: vww(230);
+        font-size: vww(72);
+      }
 
       &::before {
         content: "";
@@ -179,6 +283,13 @@
         background-position: vw(18) 0;
         background-image: url("../images/score-bg.svg");
         pointer-events: none;
+        @include for-lg{
+          width: vww(1007);
+          height: vww(772);
+          background-repeat: no-repeat;
+          //background-size: cover;
+          background-position: vww(18) 0;
+        }
       }
     }
   }
@@ -196,78 +307,144 @@
       width: vw(165);
       top: vw(643);
       left: vw(249);
+      @include for-lg{
+        width: vww(165);
+        top: vww(643);
+        left: vww(249);
+      }
     }
 
     &--two {
       width: vw(101);
       top: vw(782);
       left: vw(615);
+      @include for-lg{
+        width: vww(101);
+        top: vww(782);
+        left: vww(615);
+      }
     }
 
     &--three {
       width: vw(71);
       top: vw(540);
       left: vw(755);
+      @include for-lg{
+        width: vww(71);
+        top: vww(540);
+        left: vww(755);
+      }
     }
 
     &--four {
       width: vw(112);
       top: vw(698);
       left: vw(960);
+      @include for-lg{
+        width: vww(112);
+        top: vww(698);
+        left: vww(960);
+      }
     }
 
     &--five {
       width: vw(101);
       top: vw(833);
       left: vw(1711);
+      @include for-lg{
+        width: vww(101);
+        top: vww(833);
+        left: vww(1711);
+      }
     }
 
     &--six {
       width: vw(65);
       top: vw(437);
       left: vw(346);
+      @include for-lg{
+        width: vww(65);
+        top: vww(437);
+        left: vww(346);
+      }
     }
 
     &--seven {
       width: vw(112);
       top: vw(628);
       left: vw(1584);
+      @include for-lg{
+        width: vww(112);
+        top: vww(628);
+        left: vww(1584);
+      }
     }
 
     &--eight {
       width: vw(112);
       top: vw(504);
       left: vw(1359);
+      @include for-lg{
+        width: vww(112);
+        top: vww(504);
+        left: vww(1359);
+      }
     }
 
     &--nine {
       width: vw(101);
       top: vw(773);
       left: vw(1479);
+      @include for-lg{
+        width: vww(101);
+        top: vww(773);
+        left: vww(1479);
+
+      }
     }
 
     &--ten {
       width: vw(71);
       top: vw(729);
       left: vw(88);
+      @include for-lg{
+        width: vww(71);
+        top: vww(729);
+        left: vww(88);
+      }
     }
 
     &--eleven {
       width: vw(71);
       top: vw(492);
       left: vw(1450);
+      @include for-lg{
+        width: vww(71);
+        top: vww(492);
+        left: vww(1450);
+      }
     }
 
     &--twelve {
       width: vw(101);
       top: vw(773);
       left: vw(1479);
+      @include for-lg{
+        width: vww(101);
+        top: vww(773);
+        left: vww(1479);
+      }
     }
 
     &--thirteen {
       width: vw(112);
       top: vw(871);
       left: vw(1682);
+      @include for-lg{
+        width: vww(112);
+        top: vww(871);
+        left: vww(1682);
+      }
     }
   }
 
@@ -277,6 +454,14 @@
     bottom: 0;
     z-index: 2;
     width: vw(468);
+    @include for-lg{
+      left: vww(318);
+      width: vww(468);
+    }
+    @include for-mb{
+      left:0;
+      width: vw2(400);
+    }
 
     img {
       display: block;
@@ -289,7 +474,6 @@
       top: 0;
       left: vw(-227);
       width: vw(380);
-      height: vw(323);
       padding: vw(71) vw(56) vw(110) vw(32);
 
       font-size: vw(28);
@@ -297,8 +481,29 @@
       color: $black;
       text-align: center;
       background-repeat: no-repeat;
-      background-size: auto 100%;
+      background-size: 100% 100%;
       background-image: url("../images/speech-woman.svg");
+      @include for-lg{
+        left: vww(-227);
+        width: vww(380);
+        height: vww(323);
+
+        padding: vw2(71) vw2(56) vw2(110) vw2(32);
+
+        font-size: vww(28);
+        line-height: vww(33);
+      }
+
+      @include for-mb{
+        left: 0;
+        width: vw2(400);
+        font-size: vw2(28);
+        line-height: vw2(33);
+        padding: vww(71) vww(30) vww(122) vww(55);
+        background-image: url("../images/speech-woman2.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
     }
   }
 
@@ -309,6 +514,13 @@
     z-index: 2;
     width: vw(578);
     filter: drop-shadow(vw(-17) vw(-9) vw(16) rgba(0, 0, 0, 0.62));
+    @include for-lg{
+
+      bottom: vh(69);
+      z-index: 2;
+      width: vww(578);
+      filter: drop-shadow(vww(-17) vww(-9) vww(16) rgba(0, 0, 0, 0.62));
+    }
 
     img {
       display: block;
@@ -332,6 +544,17 @@
       background-repeat: no-repeat;
       background-size: auto 100%;
       background-image: url("../images/speech-gripp.svg");
+      @include for-lg{
+        top: vww(-138);
+        left: vww(20);
+        width: vww(503);
+        height: vww(512);
+
+        padding: vww(147) vww(83) vww(207) vww(128);
+
+        font-size: vww(28);
+        line-height: vww(33);
+      }
     }
 
     &::before {
@@ -348,6 +571,13 @@
       opacity: 0.57;
       pointer-events: none;
       filter: blur(304px);
+      @include for-lg{
+        top: vww(-106);
+        left: vww(51);
+        z-index: 1;
+        width: vww(603);
+        height: vww(431);
+      }
     }
   }
 }

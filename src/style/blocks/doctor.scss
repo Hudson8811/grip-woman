@@ -1,5 +1,8 @@
 .doctor {
   padding-top: vw(59);
+  @include for-lg{
+    padding-top: vww(59);
+  }
 
   &__title {
     margin: 0 auto vw(59);
@@ -8,6 +11,11 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
+    @include for-lg{
+      margin: 0 auto vww(59);
+      font-size: vww(48);
+      line-height: vww(56);
+    }
   }
 
   &__wrapper {
@@ -19,6 +27,11 @@
       width: vw(372);
       height: vw(389);
       margin: vw(-79) vw(-49) vw(-92) vw(-50);
+      @include for-lg{
+        width: vww(372);
+        height: vww(389);
+        margin: vww(-79) vww(-49) vww(-92) vww(-50);
+      }
 
       img {
         display: block;
@@ -35,11 +48,20 @@
       font-style: italic;
       text-align: center;
       color: $white;
+      @include for-lg{
+        width: vww(220);
+        margin: 0 auto;
+        font-size: vww(18);
+        line-height: vww(20);
+      }
 
       span {
         display: block;
         font-size: vw(14);
         font-weight: 300;
+        @include for-lg{
+          font-size: vww(14);
+        }
       }
     }
   }
@@ -49,6 +71,10 @@
     font-size: vw(24);
     line-height: 1.16;
     font-style: italic;
+    @include for-lg{
+      width: vww(607);
+      font-size: vww(24);
+    }
 
     p {
       margin: 0;
@@ -72,5 +98,15 @@
     box-shadow: inset vw(3) vw(6) vw(18) rgba(0, 0, 0, 0.48);
     border-radius: vw(21);
     background: $color-turquoise;
+    @include for-lg{
+      width: vww(248);
+      margin-left: auto;
+      padding: vww(16) vww(10) vww(8);
+
+      font-size: vww(30);
+
+      box-shadow: inset vww(3) vww(6) vww(18) rgba(0, 0, 0, 0.48);
+      border-radius: vww(21);
+    }
   }
 }

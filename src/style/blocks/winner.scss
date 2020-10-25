@@ -1,6 +1,6 @@
 .winner {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
 
   &--gripp {
     top: vw(706);
@@ -9,6 +9,14 @@
     height: vw(280);
     transform: scale(-1, 1);
     filter: drop-shadow(vw(17) vw(-9) vw(16) rgba(0, 0, 0, 0.62));
+    @include for-lg{
+      top: vww(706);
+      left: vww(342);
+      width: vww(287);
+      height: vww(280);
+      transform: scale(-1, 1);
+      filter: drop-shadow(vww(17) vww(-9) vww(16) rgba(0, 0, 0, 0.62));
+    }
   }
 
   &--woman {
@@ -18,6 +26,14 @@
     bottom: 0;
     left: vw(1162);
     filter: drop-shadow(vw(-8) vw(-7) vw(12) rgba(0, 0, 0, 0.5));
+    @include for-lg{
+      width: vww(724);
+      height: vww(539);
+
+      bottom: 0;
+      left: vww(1162);
+      filter: drop-shadow(vww(-8) vww(-7) vww(12) rgba(0, 0, 0, 0.5));
+    }
   }
 
   img {

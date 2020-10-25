@@ -5,3 +5,11 @@
 @function vh($value, $size: 1024) {
   @return $value / $size * 100vh;
 }
+
+@function vww($value, $size: 2300) {
+  @return $value / $size * 100vw;
+}
+
+@function vw2($value, $size: 768) {
+  @return $value / $size * 100vw;
+}

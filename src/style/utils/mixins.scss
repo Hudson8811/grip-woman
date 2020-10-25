@@ -9,3 +9,11 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin for-lg {
+  @media (max-width: 1500px) and (min-width:1024px) { @content; }
+}
+
+@mixin for-mb {
+  @media all and (max-width:1023px) { @content; }
+}
