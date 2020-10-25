@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-left: vw(83);
+  padding-bottom: vw(36);
+
+  &__share {
+    &-text {
+      margin-bottom: vw(10);
+      font-size: vw(17);
+      line-height: 1.235;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+}

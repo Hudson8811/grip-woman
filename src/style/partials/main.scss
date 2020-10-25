@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+input,
+button {
+  -webkit-appearance: none;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: $white;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: $white;
+  background: $white;
+  font-family: $mainFont;
+}
+
+ol,
+ul,
+nav {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1448px;
+  max-width: calc(100% - 60px);
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.blur-30 {
+  filter: blur(vw(15));
+}
+.blur-41 {
+  filter: blur(vw(20));
+}
+.blur-16 {
+  filter: blur(vw(8));
+}
+.blur-7 {
+  filter: blur(vw(3));
+}
+.zi-1 {
+  z-index: 1;
+}
+.zi-2 {
+  z-index: 2;
+}
+.zi-3 {
+  z-index: 3;
+}

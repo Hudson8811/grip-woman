@@ -1,0 +1,8 @@
+footer.footer
+  .footer__share
+    .footer__share-text поделиться с друзьями
+    ul.social
+      each item in [{id: 'vk', href: '#'}, {id: 'fb', href: '#'}, {id: 'tw', href: '#'}, {id: 'ok', href: '#'}]
+        li.social__item
+          a.social__link(href= item.href, target="_blank")
+            +icon(item.id)(width="40", height="40")

@@ -1,0 +1,7 @@
+@function vw($value, $size: 1920) {
+  @return $value / $size * 100vw;
+}
+
+@function vh($value, $size: 1024) {
+  @return $value / $size * 100vh;
+}

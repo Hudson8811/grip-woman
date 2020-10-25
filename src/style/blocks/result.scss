@@ -1,0 +1,55 @@
+.result {
+  padding-top: vw(58);
+
+  &__title {
+    width: vw(538);
+    margin: 0 auto vw(29);
+    font-size: vw(48);
+    line-height: 1.16;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__text {
+    width: vw(739);
+    margin: 0 auto vw(36);
+    font-size: vw(24);
+    line-height: 1.16;
+    font-style: italic;
+    text-align: center;
+
+    a {
+      color: #9eeeff;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        text-decoration: none;
+      }
+
+      &:active {
+        color: $color-red;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: vw(360);
+    margin: 0 auto;
+    padding: vw(18) vw(10) vw(10);
+
+    font-size: vw(26);
+    line-height: 1.15;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    color: $color-blue2;
+    text-transform: uppercase;
+
+    box-shadow: inset vw(3) vw(6) vw(18) rgba(0, 0, 0, 0.48);
+    border-radius: vw(21);
+    background: $color-turquoise;
+  }
+}

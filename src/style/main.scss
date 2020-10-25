@@ -1,0 +1,20 @@
+@import "partials/reset.css";
+@import "partials/fonts.css";
+@import "partials/jquery.fancybox.css";
+@import "partials/slick.css";
+
+/* my style */
+
+@import "utils/_var";
+@import "utils/mixins";
+@import "utils/function";
+@import "partials/main";
+@import "partials/block";
+
+@import "blocks/doctor";
+@import "blocks/question";
+@import "blocks/result";
+@import "blocks/winner";
+@import "blocks/screen";
+@import "blocks/social";
+@import "blocks/footer";

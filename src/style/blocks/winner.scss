@@ -1,0 +1,28 @@
+.winner {
+  position: absolute;
+  z-index: 3;
+
+  &--gripp {
+    top: vw(706);
+    left: vw(342);
+    width: vw(287);
+    height: vw(280);
+    transform: scale(-1, 1);
+    filter: drop-shadow(vw(17) vw(-9) vw(16) rgba(0, 0, 0, 0.62));
+  }
+
+  &--woman {
+    width: vw(724);
+    height: vw(539);
+
+    bottom: 0;
+    left: vw(1162);
+    filter: drop-shadow(vw(-8) vw(-7) vw(12) rgba(0, 0, 0, 0.5));
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,21 @@
+.social {
+  @include list-reset;
+  display: flex;
+
+  &__item {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    svg {
+      display: block;
+      fill: $color-grey;
+    }
+  }
+}
