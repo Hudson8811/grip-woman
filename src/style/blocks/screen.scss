@@ -346,6 +346,7 @@
       background: $color-red;
       mix-blend-mode: screen;
       opacity: 0.57;
+      pointer-events: none;
       filter: blur(304px);
     }
   }

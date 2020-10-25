@@ -19,6 +19,12 @@
       width: vw(372);
       height: vw(389);
       margin: vw(-79) vw(-49) vw(-92) vw(-50);
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
     }
     &-name {
       width: vw(220);
