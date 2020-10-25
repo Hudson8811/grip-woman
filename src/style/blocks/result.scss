@@ -3,6 +3,10 @@
   @include for-lg{
     padding-top: vww(58);
   }
+  @include for-mb{
+    padding-top: vw2(50);
+    padding-bottom: vw2(20);
+  }
 
   &__title {
     width: vw(538);
@@ -15,6 +19,21 @@
       width: vww(538);
       margin: 0 auto vww(29);
       font-size: vww(48);
+    }
+    @include for-mb{
+      width: vw2(370);
+      font-size: vw2(48);
+      margin-left: vw2(190);
+      line-height: vw2(56);
+      text-align: left;
+      margin-bottom: vw2(30);
+    }
+  }
+
+  &__title--2{
+    @include for-mb{
+      width: vw2(400);
+      font-size: vw2(42);
     }
   }
 
@@ -29,6 +48,11 @@
       width: vww(739);
       margin: 0 auto vww(36);
       font-size: vww(24);
+    }
+    @include for-mb{
+      width: vw2(540);
+      margin: 0 auto vw2(36);
+      font-size: vw2(24);
     }
 
     a {
@@ -72,6 +96,15 @@
 
       box-shadow: inset vww(3) vww(6) vww(18) rgba(0, 0, 0, 0.48);
       border-radius: vww(21);
+    }
+    @include for-mb{
+      width: vw2(360);
+      padding: vw2(18) vw2(10) vw2(10);
+
+      font-size: vw2(26);
+
+      box-shadow: inset vw2(3) vw2(6) vw2(18) rgba(0, 0, 0, 0.48);
+      border-radius: vw2(21);
     }
   }
 }

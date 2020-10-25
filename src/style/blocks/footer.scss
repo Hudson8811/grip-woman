@@ -8,8 +8,21 @@
     padding-left: vww(83);
     padding-bottom: vw(36);
   }
+  @include for-mb{
+    position: absolute;
+    bottom:vw2(16);
+    padding-bottom: 0;
+    width: 100%;
+    padding-left: 0;
+    z-index: 10;
+  }
 
   &__share {
+    @include for-mb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     &-text {
       margin-bottom: vw(10);
       font-size: vw(17);
@@ -20,6 +33,11 @@
       @include for-lg{
         margin-bottom: vww(10);
         font-size: vww(17);
+      }
+      @include for-mb {
+        margin-right: vw2(20);
+        font-size: vw2(14);
+        margin-bottom: 0;
       }
     }
   }

@@ -3,6 +3,9 @@
   @include for-lg{
     padding-top: vww(111);
   }
+  @include for-mb{
+    padding-top: vw2(80);
+  }
 
   &__text {
     width: vw(804);
@@ -17,6 +20,12 @@
       margin: 0 auto vww(77);
       font-size: vww(48);
     }
+    @include for-mb{
+      width: vw2(525);
+      font-size: vw2(48);
+      line-height: vw2(56);
+      margin-bottom: vw2(80);
+    }
   }
 
   &__buttons {
@@ -26,6 +35,10 @@
     margin: 0 auto;
     @include for-lg{
       width: vww(610);
+    }
+    @include for-mb{
+      display: block;
+      width: vw2(297);
     }
   }
 
@@ -51,6 +64,17 @@
 
       box-shadow: inset vww(15) vww(16) vww(26) rgba(0, 0, 0, 0.48);
       border-radius: vww(21);
+    }
+
+    @include for-mb{
+      width: vw2(297);
+      margin-bottom: vw2(20);
+      padding: vw2(18) vw2(10) vw2(9);
+
+      font-size: vw2(36);
+
+      box-shadow: inset vw2(15) vw2(16) vw2(26) rgba(0, 0, 0, 0.48);
+      border-radius: vw2(21);
     }
 
     &--true {

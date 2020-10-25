@@ -16,6 +16,16 @@
     svg {
       display: block;
       fill: $color-grey;
+      width:vw(41);
+      height: vw(41);
+      @include for-lg{
+        width:vww(41);
+        height: vww(41);
+      }
+      @include for-mb{
+        width:vw2(41);
+        height: vw2(41);
+      }
     }
   }
 }

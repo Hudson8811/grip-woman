@@ -3,6 +3,10 @@
   @include for-lg{
     padding-top: vww(59);
   }
+  @include for-mb{
+    padding-top: vw2(70);
+    position: relative;
+  }
 
   &__title {
     margin: 0 auto vw(59);
@@ -16,13 +20,27 @@
       font-size: vww(48);
       line-height: vww(56);
     }
+    @include for-mb{
+      margin: 0 auto vw2(30);
+      font-size: vw2(48);
+      line-height: vw2(56);
+    }
   }
 
   &__wrapper {
     display: flex;
+    @include for-mb {
+      flex-direction: column-reverse
+    }
   }
 
   &__author {
+    @include for-mb{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: vw2(25);
+    }
     &-image {
       width: vw(372);
       height: vw(389);
@@ -31,6 +49,11 @@
         width: vww(372);
         height: vww(389);
         margin: vww(-79) vww(-49) vww(-92) vww(-50);
+      }
+      @include for-mb{
+        margin:inherit;
+        width: vw2(240);
+        height: vw2(240);
       }
 
       img {
@@ -54,13 +77,23 @@
         font-size: vww(18);
         line-height: vww(20);
       }
+      @include for-mb{
+        margin:inherit;
+        text-align: left;
+        font-size: vw2(18);
+        line-height: vw2(20);
+        width: vw2(220);
+      }
 
       span {
         display: block;
         font-size: vw(14);
         font-weight: 300;
         @include for-lg{
-          font-size: vww(14);
+           font-size: vww(14);
+         }
+        @include for-mb{
+          font-size: vw2(14);
         }
       }
     }
@@ -74,6 +107,14 @@
     @include for-lg{
       width: vww(607);
       font-size: vww(24);
+    }
+    @include for-mb{
+      width: vw2(538);
+      font-size: vw2(24);
+      line-height: vw2(28);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: vw2(-10);
     }
 
     p {
@@ -107,6 +148,19 @@
 
       box-shadow: inset vww(3) vww(6) vww(18) rgba(0, 0, 0, 0.48);
       border-radius: vww(21);
+    }
+    @include for-mb{
+      width: vw2(248);
+      padding: vw2(16) vw2(10) vw2(8);
+
+      font-size: vw2(30);
+
+      box-shadow: inset vw2(3) vw2(6) vw2(18) rgba(0, 0, 0, 0.48);
+      border-radius: vw2(21);
+      position: absolute;
+      bottom:0;
+      left:50%;
+      margin-left: vw2(-124);
     }
   }
 }

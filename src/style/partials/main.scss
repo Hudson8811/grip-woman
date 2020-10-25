@@ -16,6 +16,11 @@ body {
 body {
   display: flex;
   width: 100%;
+  @include for-mb{
+    display: block;
+    height: auto;
+    position: relative;
+  }
 
   main {
     flex-grow: 1;

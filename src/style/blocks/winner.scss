@@ -17,6 +17,15 @@
       transform: scale(-1, 1);
       filter: drop-shadow(vww(17) vww(-9) vww(16) rgba(0, 0, 0, 0.62));
     }
+    @include for-mb{
+      top: auto;
+      bottom:vw2(10);
+      left: vw2(-90);
+      width: vw2(280);
+      height: vw2(289);
+      transform: scale(-1, 1);
+      filter: drop-shadow(vw2(17) vw2(-9) vw2(16) rgba(0, 0, 0, 0.62));
+    }
   }
 
   &--woman {
@@ -33,6 +42,12 @@
       bottom: 0;
       left: vww(1162);
       filter: drop-shadow(vww(-8) vww(-7) vww(12) rgba(0, 0, 0, 0.5));
+    }
+    @include for-mb{
+      width: vw2(343);
+      height: vw2(256);
+      left: vw2(-50);
+      transform: scale(-1, 1);
     }
   }
 
