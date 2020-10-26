@@ -47,9 +47,6 @@ $(document).ready(function () {
 	}
 
 	$('.social__link').click(function() {
-		/*var no_sharing = $(this).closest('.social').attr('data-nosharing');
-		if (no_sharing) return;*/
-
 		var socialType;
 		for (var name in socialTypes)
 			if ($(this).hasClass(name)) { socialType = name; break; }
@@ -75,8 +72,6 @@ $(document).ready(function () {
 		var p_image = parent.attr('data-image');
 		if (p_image) image = p_image;
 
-		console.log(123);
-
 		var $slink = encodeURIComponent(url);
 		switch (socialType) {
 			case 'tw':
@@ -94,7 +89,6 @@ $(document).ready(function () {
 				if (description != '') $slink += '&p[summary]='+encodeURIComponent(description); break;
 		}
 
-		console.log($(this).data('mode'));
 		if ($(this).data('mode') == 'nohash'){
 			window.open(socialTypes[socialType]+$slink,socialType,'width=500,height=500,resizable=yes,scrollbars=yes,status=yes');
 		} else {
@@ -102,7 +96,6 @@ $(document).ready(function () {
 			window.open(socialTypes[socialType]+$slink,socialType,'width=500,height=500,resizable=yes,scrollbars=yes,status=yes');
 			afterShare(socialType);
 		}
-
 	}
 	);
 
@@ -219,8 +212,6 @@ function mixArray(arr) {
 }
 
 function setQuestion(curQuestion, allQuestions) {
-	//$('.popup-share__card:visible').hide().siblings().eq(Math.floor(Math.random() * 9)).show();
-
 	var quest = allQuestions.test[curQuestion - 1],
 		title = quest.question,
 		answer = quest.answer,
