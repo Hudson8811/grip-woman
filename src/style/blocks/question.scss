@@ -56,6 +56,7 @@
 
     box-shadow: inset vw(15) vw(16) vw(26) rgba(0, 0, 0, 0.48);
     border-radius: vw(21);
+    cursor: pointer;
     @include for-lg{
       width: vww(296);
       padding: vww(18) vww(10) vww(9);

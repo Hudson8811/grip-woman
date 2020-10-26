@@ -540,8 +540,8 @@
       width: vw(380);
       padding: vw(71) vw(56) vw(110) vw(32);
 
-      font-size: vw(14);
-      line-height: vw(16);
+      font-size: vw(17);
+      line-height: vw(19);
       color: $black;
       text-align: center;
       background-repeat: no-repeat;
@@ -554,16 +554,16 @@
 
         padding: vw2(71) vw2(56) vw2(110) vw2(32);
 
-        font-size: vww(14);
-        line-height: vww(17);
+        font-size: vww(17);
+        line-height: vww(19);
       }
 
       @include for-mb{
         left: 0;
         top:vw2(-180);
         width: vw2(400);
-        font-size: vw2(28);
-        line-height: vw2(33);
+        font-size: vw2(18);
+        line-height: vw2(20);
         padding: vw2(71) vw2(45) vw2(122) vw2(65);
         background-image: url("../images/speech-woman2.svg");
         background-repeat: no-repeat;
@@ -606,8 +606,8 @@
 
       padding: vw(147) vw(83) vw(207) vw(128);
 
-      font-size: vw(14);
-      line-height: vw(17);
+      font-size: vw(17);
+      line-height: vw(19);
       color: $black;
       text-align: center;
       background-repeat: no-repeat;
@@ -620,12 +620,12 @@
 
         padding: vww(147) vww(83) vww(207) vww(128);
 
-        font-size: vww(14);
-        line-height: vww(17);
+        font-size: vww(17);
+        line-height: vww(19);
       }
       @include for-mb{
-        font-size: vw2(28);
-        line-height: vw2(33);
+        font-size: vw2(18);
+        line-height: vw2(20);
         width:vw2(380);
         background-size: vw2(500) vw2(480);
         padding: vw2(80) vw2(32) vw2(280) vw2(58);

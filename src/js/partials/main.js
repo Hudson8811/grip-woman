@@ -226,12 +226,14 @@ function setQuestion(curQuestion, allQuestions) {
 		answer = quest.answer,
 		titleAns = answer.title,
 		quote = answer.quote,
-		author = answer.author;
+		author = answer.author,
+		img = answer.img;
 
 	$('.question__text').html(title);
 	$('.doctor__title').html(titleAns);
 	$('.doctor__content p').html(quote);
 	$('.doctor__author-name').html(author);
+	$('.doctor__author-image img').attr('src', img);
 
 	$('.question').show();
 	$('.doctor').hide();
@@ -253,8 +255,5 @@ function showResults(result1) {
 
 		$('.screen--step').hide();
 		win === 1 ? $('.screen--win').show() : $('.screen--lose').show();
-
-		$('.quiz__result-title').html(result.result[win].title);
-		$('.quiz__result-text').html(result.result[win].text);
 	})
 }
