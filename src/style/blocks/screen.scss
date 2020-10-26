@@ -540,8 +540,8 @@
       width: vw(380);
       padding: vw(71) vw(56) vw(110) vw(32);
 
-      font-size: vw(28);
-      line-height: vw(33);
+      font-size: vw(14);
+      line-height: vw(16);
       color: $black;
       text-align: center;
       background-repeat: no-repeat;
@@ -554,8 +554,8 @@
 
         padding: vw2(71) vw2(56) vw2(110) vw2(32);
 
-        font-size: vww(28);
-        line-height: vww(33);
+        font-size: vww(14);
+        line-height: vww(17);
       }
 
       @include for-mb{
@@ -606,8 +606,8 @@
 
       padding: vw(147) vw(83) vw(207) vw(128);
 
-      font-size: vw(28);
-      line-height: vw(33);
+      font-size: vw(14);
+      line-height: vw(17);
       color: $black;
       text-align: center;
       background-repeat: no-repeat;
@@ -620,8 +620,8 @@
 
         padding: vww(147) vww(83) vww(207) vww(128);
 
-        font-size: vww(28);
-        line-height: vww(33);
+        font-size: vww(14);
+        line-height: vww(17);
       }
       @include for-mb{
         font-size: vw2(28);

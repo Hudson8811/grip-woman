@@ -1,8 +1,8 @@
 footer.footer
   .footer__share
     .footer__share-text поделиться с друзьями
-    ul.social
-      each item in [{id: 'vk', href: '#'}, {id: 'fb', href: '#'}, {id: 'tw', href: '#'}, {id: 'ok', href: '#'}]
+    ul.social(data-title="Заголовок share" data-image="" data-url="https://karcher.maximonline.ru/share/")
+      each item in [{id: 'vk', dataId: 'share_vk'}, {id: 'fb', dataId: 'share_fb'}, {id: 'tw', dataId: 'share_tw'}, {id: 'ok', dataId: 'share_ok'}]
         li.social__item
-          a.social__link(href= item.href, target="_blank")
+          a.social__link(class=item.id href='javascript:;' data-id=item.dataId data-mode="nohash")
             +icon(item.id)(width="40", height="40")

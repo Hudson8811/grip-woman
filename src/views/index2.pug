@@ -30,16 +30,18 @@ block main
 		
 		.screen__woman
 			img(src="images/woman.png", srcset="images/woman@2x.png" width="468", height="721", alt="")
-			.screen__woman-speech Я бесстрашен, поверь, меня тут все знают и я всегда всех сильней!
+			.screen__woman-speech
+				span Я бесстрашен, поверь, меня тут все знают и я всегда всех сильней!
 			//-Да, ты не обычная простуда. Ты опасней и страшней. Но и на тебя есть управа, поверь. Тебя хоть и знают, но респект тебе не кидают. 
 			
 
 		.screen__gripp
 			img(src="images/gripp.svg", width="578" height="565", alt="")
-			.screen__gripp-speech Я бесстрашен, поверь, меня тут все знают и я всегда всех сильней!
+			.screen__gripp-speech
+				span Я бесстрашен, поверь, меня тут все знают и я всегда всех сильней!
 		
 
-	section.screen
+	section.screen.screen--step(style="display: none")
 		.screen__header
 			.screen__header-you
 				img(src="images/you.png", width="430", height="263" alt="")
@@ -49,12 +51,12 @@ block main
 				img(src="images/gripp-text.svg", width="656", height="390" alt="")
 		.screen__text Каждый год появляется все больше и больше информации о гриппе, которая сбивает нас с толку. Что такое грипп? Правильно ли называть так любое ОРВИ? Нужно ли делать прививки от гриппа? Можно ли заболеть именно из-за них?
 		.screen__board
-			.question(style="display: none")
+			.question
 				.question__text Про любое ОРВИ можно сказать «Да я уже переболел гриппом!»
 				.question__buttons
-					button.question__btn.question__btn--true(type="button") Правда
-					button.question__btn.question__btn--myth(type="button") Миф
-			.doctor
+					button.question__btn.question__btn--true(type="button" data-correct="true") Правда
+					button.question__btn.question__btn--myth(type="button" data-correct="false") Миф
+			.doctor(style="display: none")
 				.doctor__title Миф
 				.doctor__wrapper
 					.doctor__author
@@ -71,7 +73,7 @@ block main
 		.screen__virus.screen__virus--five.blur-30.zi-3
 			img(src="images/virus.svg", width="71", height="69", alt="")
 
-	section.screen
+	section.screen.screen--result.screen--lose(style="display: none")
 		.screen__header
 			.screen__header-you
 				img(src="images/you.png", width="430", height="263" alt="")
@@ -81,9 +83,9 @@ block main
 				img(src="images/gripp-text.svg", width="656", height="390" alt="")
 		.screen__text Каждый год появляется все больше и больше информации о гриппе, которая сбивает нас с толку. Что такое грипп? Правильно ли называть так любое ОРВИ? Нужно ли делать прививки от гриппа? Можно ли заболеть именно из-за них?
 		.screen__board
-			.screen__board-score 3 x 7
+			.screen__board-score <span class="your-points">3</span> x <span class="enemy-points">7</span>
 			.result
-				.result__title Увы, пока грипп побеждает…
+				.result__title В этой битве ты проиграл, но это не значит, что ты не можешь выиграть в настоящей жизни.
 				.result__text Кажется, ты еще не все знаешь об опасностях гриппа и пользе вакцинации от него… Надеемся, что наши вопросы и пояснения помогли тебе вооружиться главным – информацией о враге! Помни, ты всегда можешь узнать больше о гриппе и прививках, обратившись к своему участковому терапевту или зайдя в соответствующие разделы на портале <a href="#">mos.ru</a>.
 				a.result__btn(href="#") Пройти тест еще раз
 		.winner.winner--gripp
@@ -96,7 +98,7 @@ block main
 		.screen__virus.screen__virus--nine.blur-30.zi-3
 			img(src="images/virus.svg", width="71", height="69", alt="")
 
-	section.screen
+	section.screen.screen--result.screen--win(style="display: none")
 		.screen__header
 			.screen__header-you
 				img(src="images/you.png", width="430", height="263" alt="")
@@ -106,9 +108,9 @@ block main
 				img(src="images/gripp-text.svg", width="656", height="390" alt="")
 		.screen__text Каждый год появляется все больше и больше информации о гриппе, которая сбивает нас с толку. Что такое грипп? Правильно ли называть так любое ОРВИ? Нужно ли делать прививки от гриппа? Можно ли заболеть именно из-за них?
 		.screen__board
-			.screen__board-score 9 x 0
+			.screen__board-score <span class="your-points">9</span> x <span class="enemy-points">0</span>
 			.result
-				.result__title Ура, победа над гриппом возможна!
+				.result__title В этой битве ты выиграл, поэтому грипп тебе точно не страшен.
 				.result__text Кажется, ты еще не все знаешь об опасностях гриппа и пользе вакцинации от него… Надеемся, что наши вопросы и пояснения помогли тебе вооружиться главным – информацией о враге! Помни, ты всегда можешь узнать больше о гриппе и прививках, обратившись к своему участковому терапевту или зайдя в соответствующие разделы на портале <a href="#">mos.ru</a>.
 				a.result__btn(href="#") Пройти тест еще раз
 		.winner.winner--woman
