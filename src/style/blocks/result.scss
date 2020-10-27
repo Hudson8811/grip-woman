@@ -107,4 +107,23 @@
       border-radius: vw2(21);
     }
   }
+
+  &__share-text {
+    font-size: vw(30);
+    text-align: center;
+    margin-bottom: vw(10);
+    margin-top: vw(20);
+
+    @include for-lg{
+      margin-bottom: vww(10);
+      font-size: vww(30);
+    }
+    @include for-mb {
+      font-size: vw2(28);
+    }
+  }
+
+  .social {
+    justify-content: center;
+  }
 }

@@ -29,23 +29,23 @@
   }
 
   &--woman {
-    width: vw(724);
-    height: vw(539);
-
+    width: vw(620);
+    //height: vw(500);
     bottom: 0;
-    left: vw(1162);
+    right: vw(0);
     filter: drop-shadow(vw(-8) vw(-7) vw(12) rgba(0, 0, 0, 0.5));
     @include for-lg{
       width: vww(724);
       height: vww(539);
 
+      right: auto;
       bottom: 0;
-      left: vww(1162);
+      left: vww(1462);
       filter: drop-shadow(vww(-8) vww(-7) vww(12) rgba(0, 0, 0, 0.5));
     }
     @include for-mb{
-      width: vw2(343);
-      height: vw2(256);
+      width: vw2(280);
+      height: vw2(180);
       left: vw2(-50);
       transform: scale(-1, 1);
     }
@@ -54,6 +54,6 @@
   img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }

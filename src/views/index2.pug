@@ -86,6 +86,12 @@ block main
 				.result__title Увы, пока грипп побеждает…
 				.result__text Кажется, ты еще не все знаешь об опасностях гриппа и пользе вакцинации от него… Надеемся, что наши вопросы и пояснения помогли тебе вооружиться главным — информацией о враге! Помни, ты всегда можешь узнать больше о гриппе и прививках, обратившись к своему участковому терапевту или зайдя на <a href="https://mosgorzdrav.ru/antivirus" target="_blank">сайт</a> Департамента здравоохранения Москвы.
 				a.result__btn(href="#") Пройти тест еще раз
+				.result__share-text поделиться результатом
+				ul.social(data-title="Заголовок share" data-image="" data-url="https://karcher.maximonline.ru/share/")
+					each item in [{id: 'vk', dataId: 'share_vk'}, {id: 'fb', dataId: 'share_fb'}, {id: 'tw', dataId: 'share_tw'}, {id: 'ok', dataId: 'share_ok'}]
+						li.social__item
+							a.social__link(class=item.id href='javascript:;' data-id=item.dataId data-mode="nohash")
+								+icon(item.id)(width="40", height="40")
 		.winner.winner--gripp
 			img(src="images/gripp.svg", width="578" height="565", alt="")
 
@@ -111,6 +117,12 @@ block main
 				.result__title Ура, победа над гриппом возможна!
 				.result__text Поздравляем, ты неплохо вооружен в этой битве: знаешь, чем опасен грипп, зачем и кому нужны прививки от него. Если хочешь одержать безоговорочную победу над этим опасным заболеванием и его осложнениями, сделай прививку! Узнать больше о графике и пунктах вакцинации можно у своего участкового терапевта или на <a href="https://mosgorzdrav.ru/antivirus" target="_blank">сайте</a> Департамента здравоохранения Москвы.
 				a.result__btn(href="#") Пройти тест еще раз
+				.result__share-text поделиться результатом
+				ul.social(data-title="Заголовок share" data-image="" data-url="https://karcher.maximonline.ru/share/")
+					each item in [{id: 'vk', dataId: 'share_vk'}, {id: 'fb', dataId: 'share_fb'}, {id: 'tw', dataId: 'share_tw'}, {id: 'ok', dataId: 'share_ok'}]
+						li.social__item
+							a.social__link(class=item.id href='javascript:;' data-id=item.dataId data-mode="nohash")
+								+icon(item.id)(width="40", height="40")
 		.winner.winner--woman
 			img(src="images/woman-2.png", srcset="images/woman-2@2x.png 2x" width="724" height="539", alt="")
 
